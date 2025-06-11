@@ -1,4 +1,4 @@
-# Hotel Booking Platform (Frontend Only)
+# Hotel Booking Platform 
 
 A responsive and modern hotel booking platform built using **React**. This project currently includes only the frontend portion of the application. The backend services and API integrations are under development and will be added soon.
 
@@ -9,12 +9,6 @@ A responsive and modern hotel booking platform built using **React**. This proje
 - [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Dependencies](#dependencies)
-- [Configuration](#configuration)
-- [Future Work](#future-work)
-- [Contributors](#contributors)
 - [License](#license)
 
 ---
