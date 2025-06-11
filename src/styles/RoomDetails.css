@@ -1,0 +1,258 @@
+/* RoomDetails.css */
+.room-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.room-details-header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 1rem;
+}
+
+.room-details-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.room-type {
+  display: inline-block;
+  background: #f8f4e5;
+  color: #b8860b;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.room-images-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.room-gallery-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.room-gallery-image:hover {
+  transform: scale(1.02);
+}
+
+.room-gallery-image:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+  height: 100%;
+}
+
+.room-info-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2rem;
+}
+
+.room-info-main h2 {
+  font-size: 1.8rem;
+  margin: 1.5rem 0 1rem;
+  color: #2c3e50;
+}
+
+.room-info-main p {
+  line-height: 1.8;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+.amenities-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.amenity-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.amenity-icon {
+  margin-right: 10px;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.room-info-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.booking-card, .rating-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.booking-card h3, .rating-card h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.75rem;
+}
+
+.price-container {
+  display: flex;
+  align-items: baseline;
+  margin: 1rem 0;
+}
+
+.price-amount {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a73e8;
+}
+
+.price-period {
+  margin-left: 0.5rem;
+  color: #777;
+}
+
+.discount-badge {
+  display: inline-block;
+  background: #ff6b6b;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.room-specs {
+  margin: 1.5rem 0;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dashed #eee;
+}
+
+.spec-label {
+  color: #777;
+}
+
+.spec-value {
+  font-weight: 500;
+}
+
+.book-now-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(45deg, #1a73e8, #6c5ce7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-now-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(26, 115, 232, 0.3);
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.rating-score {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.rating-stars {
+  margin: 0.5rem 0;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #ddd;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.review-count {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.loading-container, .error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.loading, .error {
+  font-size: 1.5rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.error {
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .room-images-gallery {
+    grid-template-columns: 1fr;
+  }
+  
+  .room-gallery-image:first-child {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  
+  .room-info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .amenities-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
