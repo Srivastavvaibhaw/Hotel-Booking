@@ -1,12 +1,54 @@
-# React + Vite
+# Hotel Booking Platform (Frontend Only)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and modern hotel booking platform built using **React**. This project currently includes only the frontend portion of the application. The backend services and API integrations are under development and will be added soon.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📑 Table of Contents
 
-## Expanding the ESLint configuration
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Dependencies](#dependencies)
+- [Configuration](#configuration)
+- [Future Work](#future-work)
+- [Contributors](#contributors)
+- [License](#license)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📌 Introduction
+
+This is the frontend of a hotel booking web application that allows users to browse available hotels, view details, and simulate booking interactions. While backend functionality such as real-time data, user authentication, and booking processing is not yet implemented, the interface is fully functional and built with React.
+
+---
+
+## ✨ Features
+
+- Built with React
+- Responsive and mobile-friendly UI
+- Homepage with hotel listings (static/demo data)
+- Hotel detail pages
+- Search and filter UI components
+- Booking form interface (non-functional)
+- Client-side routing with React Router
+
+---
+
+## ⚙️ Installation
+
+To get started with the project locally, follow these steps:
+
+```bash
+
+
+# Navigate to the project directory
+cd hotel-booking-frontend
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
