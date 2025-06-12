@@ -1,0 +1,16 @@
+/* Add these CSS variables to your root */
+:root {
+  --navbar-height: 70px;
+  --navbar-height-mobile: 60px;
+}
+
+/* Add padding-top to main content containers */
+.app {
+  padding-top: var(--navbar-height);
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding-top: var(--navbar-height-mobile);
+  }
+}

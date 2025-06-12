@@ -1,16 +1,24 @@
 /* Login.css */
+:root {
+  --navbar-height: 70px;
+  --navbar-height-mobile: 60px;
+  --content-padding: 20px;
+}
+
 .login-page {
   min-height: 100vh;
+  padding-top: calc(var(--navbar-height) + var(--content-padding));
+  background: var(--background-light);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .auth-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 1rem;
-  background-color: #f8f9fa;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  margin: 0 auto;
 }
 
 .auth-form-container {
@@ -151,8 +159,23 @@
   background-color: #f8f9fa;
 }
 
-@media (max-width: 576px) {
-  .auth-form {
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .login-page {
+    padding-top: calc(var(--navbar-height-mobile) + var(--content-padding));
+  }
+
+  .auth-container {
     padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-page {
+    padding-top: calc(var(--navbar-height-mobile) + 10px);
+  }
+
+  .auth-container {
+    padding: 1rem;
   }
 }

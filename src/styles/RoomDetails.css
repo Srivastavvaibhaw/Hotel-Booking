@@ -3,6 +3,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  padding-top: var(--navbar-height);
   font-family: 'Poppins', sans-serif;
   color: #333;
 }
@@ -239,6 +240,10 @@
 }
 
 @media (max-width: 768px) {
+  .room-details-container {
+    padding-top: var(--navbar-height-mobile);
+  }
+  
   .room-images-gallery {
     grid-template-columns: 1fr;
   }

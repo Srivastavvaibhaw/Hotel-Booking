@@ -42,7 +42,7 @@ const Booking = () => {
         type: 'Deluxe',
         price: 150,
         capacity: 2,
-        image: '/assets/deluxe-room.jpg'
+        image: '/images/room1.jpg'
       };
       
       setRoom(mockRoom);
